@@ -31,6 +31,6 @@ switch(dayNumber){
     case 6:
         day="saturday";    
         break;
-        
+
 }
-console.log("Today day is=",day);
+console.log("Today day is==",day);
