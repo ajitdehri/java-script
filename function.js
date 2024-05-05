@@ -17,16 +17,23 @@
 // console.log(mul);
 
 
+// rest parameter
+
+// function sum(...args){
+//     let sum1=0;
+//     for(let value of args){
+//         sum1=sum1+value;
+//     }
+
+//     return sum1;
+// }
+
+// let result=sum(1,2,3,4);
+// console.log(result);
+
+// Arrow function
 
 
-function sum(...args){
-    let sum1=0;
-    for(let value of args){
-        sum1=sum1+value;
-    }
-
-    return sum1;
-}
-
-let result=sum(1,2,3,4);
+const sum=(a,b)=>a+b;
+const result=sum(5,5);
 console.log(result);
