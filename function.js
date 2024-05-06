@@ -34,6 +34,34 @@
 // Arrow function
 
 
-const sum=(a,b)=>a+b;
-const result=sum(5,5);
-console.log(result);
+// const sum=(a,b)=>a+b;
+// const result=sum(5,5);
+// console.log(result);
+
+// var x=5;
+// function outer(){
+//     let x=10;
+//     function inner(){
+//         console.log(x);
+//     }
+//     inner();
+// }
+// outer();
+
+
+// named function expresssion
+
+
+// var x= function abc(){
+//     console.log("hello");
+//     console.log(abc);
+// }
+
+// x();
+
+// IIFE
+
+
+(function hello(){
+    console.log("hello");
+})();
