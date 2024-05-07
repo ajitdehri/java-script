@@ -67,6 +67,8 @@
 // })();
 
 
+// Array push/pop
+
 
 const num=[1,2,3,4];
 const result=num.pop();
