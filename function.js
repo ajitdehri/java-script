@@ -62,6 +62,14 @@
 // IIFE
 
 
-(function hello(){
-    console.log("hello");
-})();
+// (function hello(){
+//     console.log("hello");
+// })();
+
+
+
+const num=[1,2,3,4];
+const result=num.pop();
+num.push(7);
+// console.log(result);
+console.log(num);
