@@ -208,7 +208,130 @@
 
 // const arr=[1,2,3,4,5];
 // let sum=0;
-// for(let i=0; i<arr.length;i++){
+// for(let i=0; i<arr.length;i++){     old way/....
+//     sum +=arr[i];
    
 // }
 // console.log(sum);
+
+// const arr=[1,2,3,4,5];
+// const result=arr.reduce (function(acc, curr){  ////////sum of array
+//     return acc= acc + curr;
+// },0);
+// console.log(result);
+
+
+
+// example find maximum value
+
+// const arr=[1,2,3,4,5];
+
+// let max=arr[0];
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]>max){            //old way
+//         max=arr[i];
+//     }
+// }
+
+// console.log(max);
+
+
+// const result=arr.reduce(function(max,curr){
+//     if(curr>max){
+//         max=curr;
+//     }
+//     return max;
+// },0);
+
+// console.log(result);
+
+
+
+// chaining map filter and rduse method use 
+
+// updat marks of student
+
+// const student=[
+//     {name:"raj",roll:34,mark:67},
+//     {name:"rahul",roll:4,mark:34},
+//     {name:"sonu",roll:24,mark:56}
+// ]
+
+
+// const updatemarks=student.map(students=>{
+//     if(students.mark<60){
+//         students.mark +=20;
+//     }
+//     return students;
+// })
+
+// console.log(updatemarks);
+// //fillter use there
+
+// const result=updatemarks.filter(student=> student.mark>60);
+// console.log(result);
+
+
+// // reduce..
+// const totalmarkx=result.reduce(function(acc,curr){
+//     acc=acc+curr.mark;
+//     return acc;
+// },0);
+// console.log(totalmarkx);
+
+
+
+
+// every methods
+// const age=[16,25,43,57,28];
+
+// const isAdult=age.every(ages=>ages>=18);
+// console.log(isAdult);
+
+
+// // some methods
+
+// const kidage=[16,25,43,57,28];
+
+// const iskids=age.some(kid=>kid>=18);
+// console.log(iskids);
+
+
+
+// search method
+
+    // find
+
+    // const arry=[1,2,3,5,5,8,7];
+
+    // const result=arry.find(age=>age%2==0);
+    // console.log(result);
+
+
+    // //findLast
+
+    // const farr=[1,7,3,5,5,6,8];
+
+    // const ans=farr.findLast(element=>element%2==0);
+    // console.log(ans);
+
+
+    // //findIndex
+
+    // const coArr=[1,9,3,4,5];
+
+    // const findIndexAns=coArr.findIndex(indexx=>indexx%2==0);
+    // console.log(findIndexAns);
+
+
+    //findIndexLast
+
+
+  const arrindex=[1,3,13,15,17,8];
+  const resultIndex=arrindex.findLastIndex(a=>a%2==0);
+  console.log(resultIndex);
+
+
+
+
+
