@@ -148,9 +148,67 @@
 
 // sort Array---number
 
-const num=[8,5,3,9,2,1,122];
-num.sort(function(a,b){return b-a});
-console.log(num);
-num.reverse();
-console.log(num);
+// const num=[8,5,3,9,2,1,122];
+// num.sort(function(a,b){return b-a});
+// console.log(num);
+// num.reverse();
+// console.log(num);
 
+
+// fillter array
+
+// const arr=[2,3,4,5,6,7,8];
+
+// function even(num){
+//     return num%2==0;
+// }
+
+// // or
+
+// // const filterArray=arr.filter(even);
+// const filterArray=arr.filter(function even(num){
+//     return num%2==0;
+//     });
+
+
+// example 2
+
+// const arr=[2,3,4,5,6,7,8];
+// function gnumber(num){
+//     return num>5;
+// }
+
+// const newArray=arr.filter(gnumber);
+// console.log(newArray);
+
+
+// example3
+
+
+// const student=[
+//     {
+//         firstName:"ajit kumar",
+//         rollNumber: 8,
+//         mark:90
+//     },
+//     {
+//         firstName:"rahul kumar",
+//         rollNumber: 6,
+//         mark:60
+//     }
+
+// ]
+
+// const newArray=student.filter(marks=>marks.mark>80);
+// console.log(newArray);
+
+
+
+// reduse method...
+
+// const arr=[1,2,3,4,5];
+// let sum=0;
+// for(let i=0; i<arr.length;i++){
+   
+// }
+// console.log(sum);
