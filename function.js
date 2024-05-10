@@ -327,9 +327,16 @@
     //findIndexLast
 
 
-  const arrindex=[1,3,13,15,17,8];
-  const resultIndex=arrindex.findLastIndex(a=>a%2==0);
-  console.log(resultIndex);
+  // const arrindex=[1,3,13,15,17,8];
+  // const resultIndex=arrindex.findLastIndex(a=>a%2==0);
+  // console.log(resultIndex);
+
+
+  var x = 5; 
+  (function() { var x = 10; console.log(x); })(); console.log(x);
+
+
+
 
 
 
