@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <form class="container">
+        <h1>Student info form</h1>
+
+        <input type="text" placeholder="FullName"  id="name" >
+        <input type="number" placeholder="RollNo" id="roll">
+        <input type="email" placeholder="email" id="email">
+        <button type="button" onclick="register()" >submit</button>
+
+    </form>
+    <section>
+        <h1>Student Details</h1>
+        <table >
+            <thead>
+                <tr>
+                    <th>FullName</th>
+                    <th>RollNo</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody id="tableValue">
+
+            </tbody>
+        </table>
+
+    </section>
+
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>

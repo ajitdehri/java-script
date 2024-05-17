@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul style="font-size: x-large;">
+        <li >list1</li>
+        <li >list2</li>
+        <li >list3</li>
+    </ul>
+
+    <script>
+
+        let elm=document.getElementsByTagName("li");
+        console.log(elm);
+        for(let i=0;i<elm.length;i++){
+            elm[i].innerHTML="hello";
+
+        }
+        
+    </script>
+    
+</body>
+</html>

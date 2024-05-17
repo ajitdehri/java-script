@@ -1,0 +1,48 @@
+form {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+input,
+button {
+    margin-left: 10rem;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 12px;
+
+
+
+}
+
+section {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+
+}
+
+h1 {
+    margin-left: 5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e387f1
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+}

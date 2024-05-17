@@ -92,21 +92,93 @@ class customer{
 // inferitance
 
 
-class vipcustomer extends customer{
-    constructor(name,email,VipLevel){
-        super(name,email);
-        this.VipLevel=VipLevel;
-    }
+// class vipcustomer extends customer{
+//     constructor(name,email,VipLevel){
+//         super(name,email);
+//         this.VipLevel=VipLevel;
+//     }
 
-    updateVIPLevel(level){
-        this.VipLevel=level;
-        console.log(`VipLevel is..,${this.VipLevel}`);
-        console.log("viplevel--",this.VipLevel);
+//     updateVIPLevel(level){
+//         this.VipLevel=level;
+//         console.log(`VipLevel is..,${this.VipLevel}`);
+//         console.log("viplevel--",this.VipLevel);
 
-    }
-};
+//     }
+// };
 
-const vipcutomer1=new vipcustomer("ajit","ajitdehri1997@gmail.com","Gold");
-vipcutomer1.printDetails();
-console.log(vipcutomer1);
-vipcutomer1.updateVIPLevel("platinum");//update value of vipcustomer
+// const vipcutomer1=new vipcustomer("ajit","ajitdehri1997@gmail.com","Gold");
+// vipcutomer1.printDetails();
+// console.log(vipcutomer1);
+// vipcutomer1.updateVIPLevel("platinum");//update value of vipcustomer
+
+
+
+// var emp = class {
+//     constructor(id, name) {
+//       this.id = id;
+//       this.name = name;
+//     }
+//   };
+//   console.log(emp.name);
+
+
+// this keyword
+
+// console.log(this);
+
+
+// function abc(){
+//     console.log("abc");
+//     console.log(this);
+// }
+
+// abc();
+
+
+
+"use strict"
+
+// function abc(){
+//     console.log("abc");
+//     console.log(this);
+// }
+
+// abc();
+
+
+// call,Apply and bind method
+
+// const user={
+//     firstName:"ajit",
+//     lastName:"kumar",
+
+//     printFullName:function(){
+//         console.log(`my nmae is ${this.firstName} ${this.lastName}`);
+//     }
+// }
+
+//  user.printFullName();
+
+
+// const user2={
+//     firstName:"sonu",
+//     lastName:"kumar"
+
+// }
+// user.printFullName.call(user2);
+
+
+
+const user={
+    firstName:"ajit",
+    lastName:"kumar",
+
+    
+}
+
+let printFullName=function(color,game){
+    console.log(`my nmae is ${this.firstName} ${this.lastName} and favourite color ${color}`);
+    console.log(`my favourite game is ${game}`);
+}
+
+printFullName.call(user,"red","cricket");

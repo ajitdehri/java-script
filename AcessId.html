@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul style="font-size: x-large;">
+        <li id="listText1">list1</li>
+        <li id="listText2">list2</li>
+        <li id="listText3">list3</li>
+    </ul>
+
+    <script>
+
+        let elm=document.getElementById("listText1");
+        let elm1=document.getElementById("listText2");
+        console.log(elm.innerHTML);//display value & get the value
+        elm.innerHTML="<p>hello</P>";//change value & set the value
+            elm1.innerHTML="<h1>good</h1>";
+    </script>
+    
+</body>
+</html>

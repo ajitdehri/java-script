@@ -81,3 +81,18 @@
 //     console.log(num);
 //     num++;
 // }while(num<=5);
+
+
+// console.log(this);
+
+const cart = { p001: 2, p002: 1, p003: 3 };
+
+function updateCart(productId, newQuantity) {
+    cart[productId] = newQuantity;
+}
+
+updateCart("p002", 5);
+
+console.log(cart["p002"]);
+
+  
