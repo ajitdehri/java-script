@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+<!-- sebling select -->
+    <ul>
+        <li>list111</li>
+        <li id="order">list222</li>
+        <li>list333</li>
+        <li>list444</li>
+    </ul>
+
+
+
+    <!--parent to child item seclects  -->
+    
+    <!-- <ul>
+        <li id="order">list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul> -->
+
+    <ul>
+        <li>list11</li>
+        <li>list22</li>
+        <li>list33</li>
+        <li>list44</li>
+    </ul>
+
+    <script>
+
+        ///child propert can be used for select a parent property
+        // let elm=document.getElementById("order");   
+        // let prt=elm.parentElement;
+        // console.log(prt);
+        
+        // for(let i=0; i<prt.length;i++){
+        //     prt[i].innerHTML="hii";
+            
+
+        // }
+// we can select parent to child value
+        // let elm=document.getElementById("order");
+        
+        // let chil=elm.children;
+        // console.log(chil);
+        // for(let i=0;i<chil.length;i++){
+        //     chil[i].innerHTML="anjali";
+
+        // }
+       
+// first and last child selcect
+        // let node=elm.firstElementChild;
+        // let last=elm.lastElementChild;
+        // last.innerHTML="ajitkuamr"
+        // node.innerHTML="kumar";
+        // console.log(node);
+
+    //    sebling value select
+
+    let elm=document.getElementById("order");
+    let sibPrev=elm.previousElementSibling;
+    let sibNext=elm.nextElementSibling;
+    console.log(sibPrev);
+    console.log(sibNext);
+
+
+
+    </script>
+    
+</body>
+</html>

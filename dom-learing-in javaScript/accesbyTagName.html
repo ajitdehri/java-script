@@ -11,10 +11,18 @@
         <li >list2</li>
         <li >list3</li>
     </ul>
+    <ol id="orderlist">
+        <li>ol1</li>
+        <li>ol2</li>
+        <li>ol3</li>
+        <li>ol4</li>
+        <h1>ajit</h1>
+    </ol>
 
     <script>
+        let order=document.getElementById("orderlist");
 
-        let elm=document.getElementsByTagName("li");
+        let elm=order.getElementsByTagName("li");
         console.log(elm);
         for(let i=0;i<elm.length;i++){
             elm[i].innerHTML="hello";
