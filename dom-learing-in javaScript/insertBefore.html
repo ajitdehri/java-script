@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul>
+
+    <script>
+        // let elm=document.getElementById("list");
+        // let list=document.createElement("li");
+        // list.textContent="list5";
+
+        // elm.appendChild(list);//last me jakar add ho ga
+        // console.log(elm);
+
+        // list item ko front ,middle and last me add kar skte hai ye sb method se
+
+        // let pos=elm.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling;
+        // elm.insertBefore(list,pos);
+        
+
+        // just add element after body tag 
+
+        let parent=document.body;
+
+        let elm=document.createElement("h2");
+        elm.textContent="this h2 tag";
+
+        let list1=document.getElementById("list");
+        parent.insertBefore(elm,list1)
+
+        
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>
